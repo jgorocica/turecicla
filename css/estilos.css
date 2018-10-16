@@ -1,0 +1,24 @@
+/* creado por funveco */
+
+header {
+	background-color: #FFFFFF;
+	padding: 16px 0ps;
+}
+footer {
+	background-color: #eac102;
+	padding: 8px 0ps;
+	color: #fff;
+	text-align: center;
+	font-size: 13px;
+	}
+#logo {
+	padding:4px;
+	float:left;
+}
+.derecha {
+	padding:10px 40px;
+}
+.centro {
+	padding:25px 40px;
+	float: center;
+}
