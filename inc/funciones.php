@@ -47,7 +47,14 @@ $cantidad_web=mysqli_num_rows($consulta_web);
 $dato=array($datos_web['url'], $datos_web['email'], $datos_web['titulo']);
 
 
-
 mysqli_free_result($consulta_web);
+
+//Auto login
+if(isset($_COOKIE['idcookie']) && isset($_COOKIE['nombrecookie']) && !isset($_SESSION['iduser'])){
+		
+		$_SESSION['iduser']=$_COOKIE['idcookie'];
+	    $_SESSION['nombreuser']=$_COOKIE['nombrecookie'];
+		
+}
 
 ?>

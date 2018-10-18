@@ -5,8 +5,10 @@
 			<div class="menu-lista" id="menu1">			
 			<ul>
 				<li <?php if($menu=='index') echo 'class="menu-activo"'; ?>><a href="<?php echo $dato[0]; ?>">Inicio</a></li>
-				<li <?php if($menu=='registro') echo 'class="menu-activo"'; ?>><a href="#">Registro</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li <?php if($menu=='contacto') echo 'class="menu-activo"'; ?>><a href="<?php echo $dato[0]; ?>contacto">Contacto</a></li>
+				
+				
+				<li><a href="<?php echo $dato[0]; ?>agregar">Agregar</a></li>
 			</ul>
 			</div>			
 			

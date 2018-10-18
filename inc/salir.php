@@ -1,16 +1,19 @@
-<?php require_once("conexion.php");
+<?php require_once('../conexion.php');
 
-if(isset($_GET['cerrar'])) || $_GET['cerrar']!='yes') exit;
+if (!isset($_GET['cerrar']) || $_GET['cerrar']!='yes') exit;
 
-	$SESSION['iduser']=null;
-	$SESSION['nombreuser']=null;
+	$_SESSION['iduser']=null;
+	$_SESSION['nombreuser']=null;
 	
-	unset($SESSION['iduser']);
-	unset($SESSION['nombreuser']);
+	unset($_SESSION['iduser']);
+	unset($_SESSION['nombreuser']);
+	
+			setcookie('idcookie','',time()+30*24*60*60,'/');
+			setcookie('nombrecookie','',time()+30*24*60*60,'/'); 
 	
 	session_destroy();
 	
-	heather('Location:'.$dato[0]);
+	header('location:'.$dato[0]);
 	
 	exit;
 

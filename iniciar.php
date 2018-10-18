@@ -2,7 +2,7 @@
 
 $menu='iniciar';
 
-if(isset($SESSION['iduser'])) header('location:'.$dato[0]);
+if(isset($_SESSION['iduser'])) header('location:'.$dato[0]);
 
 ?>
 <!doctype html>
@@ -43,6 +43,14 @@ if(isset($SESSION['iduser'])) header('location:'.$dato[0]);
 					<div class="formulario-grupo">
 					<label for="pass">Contraseña</label>
 					<input type="password" name="pass" id="pass" placeholder="Contraseña...">
+					</div>
+					
+					<div class="formulario-grupo">
+					
+					<div class="recordarme">
+					<input type="checkbox" name="recordar" id="recordar" checked> <label for="recordar">Recordar sesión</label>
+					</div>
+					
 					</div>
 
 				

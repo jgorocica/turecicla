@@ -1,14 +1,23 @@
-Aquï¿½ se puede dejar los comentarios:
+Aquí se puede dejar los comentarios:
 
-Estoy trabajando en esta pï¿½gina web dinï¿½mica para la causa del cuidado del medio ambiente.
+Estoy trabajando en esta página web dinámica para la causa del cuidado del medio ambiente.
 Necesito ayuda profesional, gracias por el apoyo.
 
+Errores del sitio web:
 
-/*****************************************************************************
-# Alteraciones realizadas branch: marcelo-roncatto-paraguay
-* efectos.js linea 54:
-- Arreglado comando equivocado "Location.href" se cambio a "location.href"
+*En el fichero efacto.js en la linea 19 se encuentra la funcion "location.reload();" la cual no esta cargando, en el curso video:
+min 4:50 + el minuto 5:40 del curso video:https://www.youtube.com/watch?v=W7EwGrjjies&index=17&list=PLn6DZNSAhHfttuiGIbvEdyo_8OEWC6sAZ
+la cual se cambio por:
+	alert("hola mundo");
+	window.location.replace("http://localhost/turecicla/iniciar");
+Pero todavia no carga la pagina.
 
-* efectos.js linea 75 a 76:
-- Ajustado la funcion de limpiar espacios en blanco.
-/******************************************************************************
+*al registrar nuevo usuario, deberia saltar a la pagina de inicio.php.
+
+*luego al colocar los datos de user y password, [[Presenta error en la HD chrome: ---Parse error: syntax error, unexpected end of file in D:\XAMPP\htdocs\turecicla\inc\login.php on line 33]] 
+deberia entrar o saltar a la pagina perfil.php, y por sonsigiente deberia cambiar 
+los botones del header de (inicio) y (registro) por el boton con el nombre del (usuario) y con otro boton (X) al lado para cerrar
+sesion.
+
+*en url:"localhost/turecicla/user/perfil" se configuro un boton (Subir Avatar) el cual no he podido probrlo porque no he podido entrar a la misma.
+
