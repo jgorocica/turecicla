@@ -1,6 +1,6 @@
 //funciones javascript
 
-var urlweb = 'http://localhost/turecicla/';
+var urlweb = 'http://localhost:8888/turecicla/';
 
 
 function subir_avatar(){
@@ -27,16 +27,16 @@ function login_ajax(user, pass) {
             //enviar el registro
                 $.ajax({
                     type: 'POST',
-                    url: urlweb + 'inc/login.php',
+                    url: urlweb + '/inc/login.php',
 					cache: false,
                     //data: 'user=' + user + '&correo=' + correo + '&pass1=' + pass1,
                     data: $('#formInicio').serialize(),
 					success: function(respuesta) {
-						if (limpiar(respuesta) == 'correcto'){
+						console.log("Respuesta: " + respuesta);
+						if (respuesta === 'correcto'){
 			                //recargar la pagina -----no quiere cargarr en el min 4:50 + el minuto 5:40 del curso video:https://www.youtube.com/watch?v=W7EwGrjjies&index=17&list=PLn6DZNSAhHfttuiGIbvEdyo_8OEWC6sAZ
 							//location.reload(); 
-								alert("hola mundo");
-								window.location.replace("http://localhost/turecicla/iniciar");
+							window.location.replace("http://localhost:8888/turecicla/iniciar");
 						} else if (limpiar(respuesta) == 'error'){
 							//mostrar error
 							$('#login-error').fadeIn(500);

@@ -9,19 +9,19 @@ $menu='index';
 <head>
     <meta charset="UTF-8">
     <title>www.turecicla.com</title>
-	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $dato[0]; ?>img/favicon-turecicla.com.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon-turecicla.com.ico" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="<?php echo $dato[0]; ?>css/base.css">
-	<link rel="stylesheet" href="<?php echo $dato[0]; ?>css/estilos.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/estilos.css">
+	<link type="text/css"  href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	
 </head>
 <body>
 	
-	<?php include('inc/header.php'); ?>
+	<?php include('/inc/header.php'); ?>
 		
-	<?php include('inc/menu.php'); ?>
+	<?php include('/inc/menu.php'); ?>
 
 			<div class="contenedor fondo-blanc relleno-8 borde-gris" style="min-height: 600px">
 			
@@ -42,10 +42,10 @@ $menu='index';
 			
 			</div>
 			
-	<?php include('inc/footer.php'); ?>
+	<?php include('/inc/footer.php'); ?>
 		
 
-	<script src="<?php echo $dato[0]; ?>js/base.js"></script>
+	<script src="./js/base.js"></script>
 	
 </body>
 </html>
