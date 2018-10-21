@@ -4,18 +4,18 @@ var urlweb = 'http://localhost/turecicla/';
 
 
 function subir_avatar(){
-	
+
 	var formData = new FormData($("#formAvatar")[0]);
 	$.ajax({
 	type: 'POST',
-	url: urlweb + 'invsubida.php',
+	url: urlweb + 'inc/subida.php',
 	data: formData,
 	contentType: false,
 	processData: false,
 	success: function(respuesta){
 		//Refrescar imagen una vez subida
 		$('#formAvatar')[0].reset();
-		$('#imagenavatar').attr('src', respuesta);
+		$('#avatar').attr('src', respuesta);
 	}
 	});
 }
@@ -23,7 +23,7 @@ function subir_avatar(){
 
 function login_ajax(user, pass) {
     if (limpiar(user) !== '' && limpiar(pass) !== '') {
-         
+
             //enviar el registro
                 $.ajax({
                     type: 'POST',
@@ -33,18 +33,17 @@ function login_ajax(user, pass) {
                     data: $('#formInicio').serialize(),
 					success: function(respuesta) {
 						if (limpiar(respuesta) == 'correcto'){
-			                //recargar la pagina -----no quiere cargarr en el min 4:50 + el minuto 5:40 del curso video:https://www.youtube.com/watch?v=W7EwGrjjies&index=17&list=PLn6DZNSAhHfttuiGIbvEdyo_8OEWC6sAZ
-							//location.reload(); 
+							//location.reload();
 								alert("hola mundo");
-								window.location.replace("http://localhost/turecicla/iniciar");
+								window.location.replace("http://localhost/turecicla/user/perfil");
 						} else if (limpiar(respuesta) == 'error'){
 							//mostrar error
 							$('#login-error').fadeIn(500);
 							$('#login-mensaje').text('Datos incorrectos');
 						}
 					}
-                });             
-            
+                });
+
     } else {
             $('#login-error').fadeIn(500);
             $('#login-mensaje').text('completa los campos');
@@ -76,7 +75,7 @@ function registro_ajax(user,correo,pass1,pass2) {
 							$('#registro-mensaje').text('correo no disponible');
 						}
 					}
-                });             
+                });
             }
     }    else {
             $('#registro-error').fadeIn(500);
@@ -89,6 +88,3 @@ function limpiar(valor) {
   var cadena = valor.split(" ").join("");
   return cadena;
 }
-
-
-
