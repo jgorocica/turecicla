@@ -1,4 +1,6 @@
-<?php require_once('../conexion.php');
+<?php
+
+require_once('../conexion.php');
 
 //validar formulario
 if(!isset($_POST['user']) || $_POST['user']=='' || $_POST['pass']=='') exit;
@@ -24,8 +26,10 @@ if($cantidad_login==1){
 		setcookie('idcookie',$datos_login['id'],time()+30*24*60*60,'/');
 	    setcookie('nombrecookie',$datos_login['user'],time()+30*24*60*60,'/');
 	echo 'correcto';
+	}
+} else {
+	echo 'error';
 }
-else echo 'error';
 
 mysqli_free_result($consulta_login);
 }

@@ -2,7 +2,7 @@
 
 $menu='iniciar';
 
-if(isset($_SESSION['iduser'])) header('location:'.$dato[0]);
+//if(isset($_SESSION['iduser'])) header('location:'.$dato[0]);
 
 ?>
 <!doctype html>
