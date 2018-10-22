@@ -53,7 +53,7 @@ $cantidad_perfil=mysqli_num_rows($consulta_perfil);
 
 
 				<br>
-				<strong>Nombre:</strong><?php echo $datos_perfil['user']; ?>
+				<strong>Nombre:</strong>  <?php echo $datos_perfil['user']; ?>
 			</div>
 
 			<div class="columna columna-m-3 columna-g-3">

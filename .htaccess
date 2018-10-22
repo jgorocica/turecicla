@@ -4,6 +4,6 @@ RewriteEngine on
 RewriteRule ^registro registro.php
 RewriteRule ^iniciar iniciar.php
 RewriteRule ^contacto contacto.php
-RewriteRule ^agregar agregar.php
+RewriteRule ^publicar publicar.php
 
 RewriteRule ^user/perfil user/perfil.php

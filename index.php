@@ -22,6 +22,8 @@ $menu='index';
 	<?php include('inc/header.php'); ?>
 		
 	<?php include('inc/menu.php'); ?>
+	
+	<?php include('slider/slider.php'); ?>
 
 			<div class="contenedor fondo-blanc relleno-8 borde-gris" style="min-height: 600px">
 			

@@ -34,7 +34,7 @@ function login_ajax(user, pass) {
 					success: function(respuesta) {
 						if (limpiar(respuesta) == 'correcto'){
 							//location.reload();
-								alert("hola mundo");
+								alert("BIENVENIDO");
 								window.location.replace("http://localhost/turecicla/user/perfil");
 						} else if (limpiar(respuesta) == 'error'){
 							//mostrar error
