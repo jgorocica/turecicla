@@ -3,6 +3,9 @@ Aquí se puede dejar los comentarios:
 Estoy trabajando en esta página web dinámica para la causa del cuidado del medio ambiente.
 Necesito ayuda profesional, gracias por el apoyo.
 
+____________________________________________________________________________________________________________________________________
+fase03
+
 Errores del sitio web:
 
 *En el fichero efacto.js en la linea 19 se encuentra la funcion "location.reload();" la cual no esta cargando, en el curso video:
@@ -20,4 +23,25 @@ los botones del header de (inicio) y (registro) por el boton con el nombre del (
 sesion.
 
 *en url:"localhost/turecicla/user/perfil" se configuro un boton (Subir Avatar) el cual no he podido probrlo porque no he podido entrar a la misma.
+
+
+_______________________________________________________________________________________________________________________
+fase04
+
+Cambios: creacion de un slider en index.php ---siguiendo tutorial: https://www.youtube.com/watch?v=GirwDNbOLcI
+
+*Se creo la carpeta "slider" y el archivo "slider.php"
+
+*Se adiciono los atributos .container__slider // .container__slider .slider // .comtainer__slider .slider li // .comtainer__slider .slider li img // @keyframes moverse .mi_textarea // .mititulo
+
+*se creo la plantilla publicar.php
+
+error: me sale el siguiente error luego de tratar de registrar en la base de dato el titulo, imagen, mensaje y autor.
+
+Notice: Undefined index: imagen1 in D:\XAMPP\htdocs\turecicla\inc\process.php on line 4
+
+Notice: Undefined index: imagen1 in D:\XAMPP\htdocs\turecicla\inc\process.php on line 5
+
+Fatal error: Uncaught Error: Call to undefined function GetSQLValueString() in D:\XAMPP\htdocs\turecicla\inc\process.php:9 Stack trace: #0 {main} thrown in D:\XAMPP\htdocs\turecicla\inc\process.php on line 9
+
 
